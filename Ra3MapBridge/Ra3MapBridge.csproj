@@ -7,4 +7,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\MapCoreLibMod\MapCoreLibMod.csproj" />
+    </ItemGroup>
+
 </Project>
