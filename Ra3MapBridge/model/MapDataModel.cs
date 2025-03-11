@@ -25,7 +25,10 @@ namespace MapCoreLib.model
         
         public List<HeightMapBorder> Borders { get; private set; }
         
-        public void Reload(string mapDirPath)
+        public BlendTileData BlendTileData { get; private set; }
+        
+        
+        public void open(string mapDirPath)
         {
             var ra3Map = MapHelper.OpenRa3Map(mapDirPath);
             var heightMapData = ra3Map.getAsset<HeightMapData>(Ra3MapConst.ASSET_HeightMapData);
@@ -50,6 +53,10 @@ namespace MapCoreLib.model
                     Corner2Y = border.Corner2Y
                 });
             }
+            
+            var blendTileData = ra3Map.getAsset<BlendTileData>(Ra3MapConst.ASSET_BlendTileData);
+            
+            
         }
         
         public void SaveHeightMapData(string mapDirPath)
