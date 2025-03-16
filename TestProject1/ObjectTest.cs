@@ -11,7 +11,7 @@ public class ObjectTest
         var map = Ra3MapWrap.Open(PathUtil.RA3MapFolder, "test_4");
 
         var objectModel = map.AddObject("SovietMCV", 1000, 1000);
-        objectModel.belong_to_team_name = "Player_1";
+        objectModel.belong_to_team_full_name = "Player_1";
         objectModel.experience_level = 3;
         objectModel.angle = 40;
         objectModel.initial_health = 120;
@@ -33,7 +33,7 @@ public class ObjectTest
     {
         var map = Ra3MapWrap.Open(PathUtil.RA3MapFolder, "test_4");
         
-        map.GetObjects().Where(o => o.type_name == "SovietMCV").ToList()[0].belong_to_team_name = "Player_1/teamPlayer_1";
+        map.GetObjects().Where(o => o.type_name == "SovietMCV").ToList()[0].belong_to_team_full_name = "Player_1/teamPlayer_1";
         
         
         map.Save();

@@ -51,7 +51,7 @@ public class ObjectModel
         set => _mapObject.typeName = value;
     }
 
-    public string belong_to_team_name
+    public string belong_to_team_full_name
     {
         get => _mapObject.assetPropertyCollection.getProperty("originalOwner").data.ToString();
         set => _mapObject.assetPropertyCollection.getProperty("originalOwner").data = value;
@@ -160,7 +160,7 @@ public class ObjectModel
                ", z=" + z +
                ", unique_id='" + unique_id + '\'' +
                ", type_name='" + type_name + '\'' +
-               ", belong_to_team_name='" + belong_to_team_name + '\'' +
+               ", belong_to_team_name='" + belong_to_team_full_name + '\'' +
                ", object_name='" + object_name + '\'' +
                ", initial_health=" + initial_health +
                ", enabled=" + enabled +
