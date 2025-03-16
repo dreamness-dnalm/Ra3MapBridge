@@ -25,12 +25,12 @@ public partial class Ra3MapWrap
         get => _heightMapData.borderWidth;
     }
 
-    private int MapPlayableWidth
+    public int MapPlayableWidth
     {
         get => _heightMapData.playableWidth;
     }
 
-    private int MapPlayableHeight
+    public int MapPlayableHeight
     {
         get => _heightMapData.playableHeight;
     }
