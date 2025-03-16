@@ -58,7 +58,13 @@ namespace MapCoreLib.Core.Asset
             return 3;
         }
 
-        public static MapObject ofObj(string typeName, Vec3D vec3D, float angle, string objName, MapDataContext context)
+        public static MapObject ofObj(string typeName, 
+            Vec3D vec3D, 
+            float angle, 
+            string objName, 
+            string belongToTeam,
+            MapDataContext context
+            )
         {
             var mapObject = new MapObject();
             mapObject.registerSelf(context);
@@ -66,7 +72,7 @@ namespace MapCoreLib.Core.Asset
             mapObject.angle = angle;
             mapObject.roadOption = 0;
             mapObject.typeName = typeName;
-            mapObject.assetPropertyCollection.addProperty("originalOwner", "PlyrNeutral/teamPlyrNeutral", context);
+            mapObject.assetPropertyCollection.addProperty("originalOwner", belongToTeam, context);
             mapObject.assetPropertyCollection.addProperty("objectName", objName, context);
 
             mapObject.assetPropertyCollection.addProperty("objectInitialHealth", 100, context);
@@ -80,6 +86,8 @@ namespace MapCoreLib.Core.Asset
             mapObject.assetPropertyCollection.addProperty("objectBasePriority", 40, context);
             mapObject.assetPropertyCollection.addProperty("objectBasePhase", 1, context);
             mapObject.assetPropertyCollection.addProperty("objectLayer", "", context);
+            mapObject.assetPropertyCollection.addProperty("objectInitialStance", 0, context);
+            mapObject.assetPropertyCollection.addProperty("objectExperienceLevel", 1, context);
 
             return mapObject;
         }

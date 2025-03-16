@@ -1,3 +1,5 @@
 .idea
 **/bin
 **/obj
+.vscode
+Ra3MapBridge.sln.DotSettings.user

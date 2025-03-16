@@ -6,6 +6,8 @@ namespace MapCoreLib.Core.Asset
     {
         public AssetPropertyCollection propertyCollection = new AssetPropertyCollection();
         
+       
+        
         public Team fromStream(BinaryReader binaryReader, MapDataContext context)
         {
             propertyCollection = new AssetPropertyCollection().fromStream(binaryReader, context);
