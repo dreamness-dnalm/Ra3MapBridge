@@ -150,4 +150,31 @@ public class ObjectModel
             _mapObject.assetPropertyCollection.getProperty("objectExperienceLevel").data = value;
         }
     }
+
+    public override string ToString()
+    {
+        return "ObjectModel{" +
+               "angle=" + angle +
+               ", x=" + x +
+               ", y=" + y +
+               ", z=" + z +
+               ", unique_id='" + unique_id + '\'' +
+               ", type_name='" + type_name + '\'' +
+               ", belong_to_team_name='" + belong_to_team_name + '\'' +
+               ", object_name='" + object_name + '\'' +
+               ", initial_health=" + initial_health +
+               ", enabled=" + enabled +
+               ", indestructible=" + indestructible +
+               ", unsellable=" + unsellable +
+               ", powered=" + powered +
+               ", recruitable_ai=" + recruitable_ai +
+               ", targetable=" + targetable +
+               ", sleeping=" + sleeping +
+               ", base_priority=" + base_priority +
+               ", base_phase=" + base_phase +
+               ", layer='" + layer + '\'' +
+               ", stance='" + stance + '\'' +
+               ", experience_level=" + experience_level +
+               '}';
+    }
 }

@@ -19,7 +19,9 @@ public partial class Ra3MapWrap
         LoadBlendTileData();
         LoadObjectsList();
         LoadWorldInfo();
+        LoadPlayers();
         LoadTeams();
+        
     }
 
     public static Ra3MapWrap NewMap(string outputPath, string mapName, int width, int height, int border,

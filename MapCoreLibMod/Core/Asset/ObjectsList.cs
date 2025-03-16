@@ -22,6 +22,11 @@ namespace MapCoreLib.Core.Asset
                 var mapObject = (MapObject) new MapObject().fromStream(binaryReader, context);
                 mapObjects.Add(mapObject);
                 uniqueIDSet.Add(mapObject.uniqueID);
+                if (mapObject.typeName == "*Waypoints/Waypoint")
+                {
+                    waypointNameSet.Add(mapObject.assetPropertyCollection.getProperty("waypointName").data.ToString());
+                }
+                
             }
 
             return this;

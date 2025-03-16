@@ -22,4 +22,12 @@ public class TeamModel
         get => _team.propertyCollection.getProperty("teamOwner").data.ToString();
         set => _team.propertyCollection.getProperty("teamOwner").data = value;
     }
+
+    public override string ToString()
+    {
+        return "TeamModel{" +
+               "team_name='" + team_name + '\'' +
+               ", belong_to_player_name='" + belong_to_player_name + '\'' +
+               '}';
+    }
 }

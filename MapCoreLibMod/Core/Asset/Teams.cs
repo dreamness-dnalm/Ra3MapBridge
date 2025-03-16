@@ -7,14 +7,17 @@ namespace MapCoreLib.Core.Asset
     {
         public List<Team> teamList = new List<Team>();
         
-        public HashSet<string> teamNameSet = new HashSet<string>();
+        public HashSet<string> teamFullNameSet = new HashSet<string>();
 
         protected override void parseData(BinaryReader binaryReader, MapDataContext context)
         {
             var count = binaryReader.ReadInt32();
             for (int i = 0; i < count; i++)
             {
-                teamList.Add(new Team().fromStream(binaryReader, context));
+                var team = new Team().fromStream(binaryReader, context);
+                var teamFullName = team.propertyCollection.getProperty("teamOwner").data.ToString() + "/" + team.propertyCollection.getProperty("teamName").data.ToString();
+                teamList.Add(team);
+                teamFullNameSet.Add(teamFullName);
             }
         }
 
@@ -39,29 +42,32 @@ namespace MapCoreLib.Core.Asset
 
         public Team addTeam(MapDataContext context, string teamName, string belongToPlayerName)
         {
-            if (teamNameSet.Contains(teamName))
+            var fullTeamName = belongToPlayerName + "/" + teamName;
+            if (teamFullNameSet.Contains(fullTeamName))
             {
-                throw new Exception("Team already exists: " + teamName);
+                throw new Exception("Team already exists: " + fullTeamName);
             }
             
             var team = Team.of(context, teamName, belongToPlayerName);
             teamList.Add(team);
-            teamNameSet.Add(teamName);
+            teamFullNameSet.Add(fullTeamName);
             return team;
         }
 
-        public bool removeTeam(MapDataContext context, string teamName)
+        public bool removeTeam(MapDataContext context, string teamName, string belongToPlayerName)
         {
-            if (!teamNameSet.Contains(teamName))
+            var fullTeamName = belongToPlayerName + "/" + teamName;
+            if (!teamFullNameSet.Contains(fullTeamName))
             {
                 return false;
             }
 
-            teamNameSet.Remove(teamName);
+            teamFullNameSet.Remove(fullTeamName);
             
             for (int i = 0; i < teamList.Count; i++)
             {
-                if (teamList[i].propertyCollection.getProperty("teamOwner").data.ToString() == teamName)
+                if (teamList[i].propertyCollection.getProperty("teamName").data.ToString() == teamName &&
+                    teamList[i].propertyCollection.getProperty("teamOwner").data.ToString() == belongToPlayerName)
                 {
                     teamList.RemoveAt(i);
                     return true;

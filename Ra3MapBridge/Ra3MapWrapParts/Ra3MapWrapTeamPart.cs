@@ -20,9 +20,9 @@ public partial class Ra3MapWrap
         return new TeamModel(team);
     }
     
-    public bool RemoveTeam(string teamName)
+    public bool RemoveTeam(string teamName, string belongToPlayerName)
     {
-        return _teams.removeTeam(ra3Map.getContext(), teamName);
+        return _teams.removeTeam(ra3Map.getContext(), teamName, belongToPlayerName);
     }
     
     
