@@ -9,7 +9,7 @@ modification:
 - switch compile target to .NET 6.0 from .NET Framework 3.5
 - remove some unnecessary files for invoked by ra3map_python, such as Core/Scripts, Core/Util/EditorHelper.cs, etc.  
 - modify some code for compatibility with invoked by ra3map_python
-- modify some other logic, about waypoint, worldinfo, etc.
+- modify some other logic, such as waypoint, worldinfo, etc.
 
 ### Ra3MapBridge
 This part is a wrapper for MapCoreLibMod, which will be called by the ra3map_python project. 
