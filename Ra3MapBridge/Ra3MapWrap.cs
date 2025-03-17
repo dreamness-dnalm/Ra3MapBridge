@@ -24,7 +24,7 @@ public partial class Ra3MapWrap
         
     }
 
-    public static Ra3MapWrap NewMap(string outputPath, string mapName, int width, int height, int border,
+    public static Ra3MapWrap NewMap(string outputPath, string mapName, int playableWidth, int playableHeight, int border,
         int initPlayerStartWaypointCnt = 2,
         string defaultTexture = "Dirt_Yucatan03")
     {
@@ -39,8 +39,8 @@ public partial class Ra3MapWrap
         var newMapConfig = new NewMapConfig()
         {
             mapPath = mapFilePath,
-            width = width,
-            height = height,
+            width = playableWidth,
+            height = playableHeight,
             border = border,
             defaultTexture = defaultTexture
         };
@@ -53,8 +53,8 @@ public partial class Ra3MapWrap
             var objectsList = newMap.getContext().getAsset<ObjectsList>(Ra3MapConst.ASSET_ObjectsList);
            objectsList.AddPlayerStartWaypoint(newMap.getContext(), i, 
                 new Vec3D(
-                    random.NextDouble() * width * 10f,   
-                    random.NextDouble() * height * 10f ,
+                    random.NextDouble() * playableWidth * 10f,   
+                    random.NextDouble() * playableHeight * 10f ,
                         0f));
            
         }
