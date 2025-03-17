@@ -23,7 +23,15 @@ public partial class Ra3MapWrap
     
     public string GetTileTexture(int x, int y)
     {
-        return _blendTileData.textures[_blendTileData.tiles[x, y]].name;
+        int tmp = y % 8 / 2 * 16 + y % 2 * 2 + x % 8 / 2 * 4 + x % 2;
+        
+        
+        
+        var index = _blendTileData.tiles[x, y];
+        
+        // result = 64 * textureIndex + index
+        var textureIndex = (_blendTileData.tiles[x, y] - tmp) / 64;
+        return _blendTileData.textures[textureIndex].name;
     }
     
     // ---------- passability ----------------

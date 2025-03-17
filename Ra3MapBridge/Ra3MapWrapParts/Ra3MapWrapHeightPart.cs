@@ -52,12 +52,12 @@ public partial class Ra3MapWrap
     
     // ----------- height --------------
     
-    public float SetHeight(int x, int y, float height)
+    public float SetTerrainHeight(int x, int y, float height)
     {
         return HeightData[x, y] = height;
     }
     
-    public float GetHeight(int x, int y)
+    public float GetTerrainHeight(int x, int y)
     {
         return HeightData[x, y];
     }
