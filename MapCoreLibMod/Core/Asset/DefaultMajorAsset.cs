@@ -1,6 +1,6 @@
 using System.IO;
 
-namespace MapCoreLib.Core.Asset
+namespace MapCoreLibMod.Core.Asset
 {
     public class DefaultMajorAsset: MajorAsset
     {

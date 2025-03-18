@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace MapCoreLib.Core.Util
+namespace MapCoreLibMod.Core.Util
 {
     public class FashHash
     {

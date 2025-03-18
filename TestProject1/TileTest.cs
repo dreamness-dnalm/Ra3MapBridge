@@ -1,4 +1,4 @@
-using MapCoreLib.Core.Util;
+using MapCoreLibMod.Core.Util;
 using Ra3MapBridge;
 
 namespace TestProject1;

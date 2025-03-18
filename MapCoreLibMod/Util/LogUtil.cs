@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Reflection;
 
-namespace MapCoreLib.Util
+namespace MapCoreLibMod.Util
 {
     public static class LogUtil
     {

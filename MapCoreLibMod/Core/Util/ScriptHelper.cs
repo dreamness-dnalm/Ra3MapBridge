@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using MapCoreLib.Core.Asset;
+using MapCoreLibMod.Core.Asset;
 
-namespace MapCoreLib.Core.Util
+namespace MapCoreLibMod.Core.Util
 {
     public static class ScriptHelper
     {

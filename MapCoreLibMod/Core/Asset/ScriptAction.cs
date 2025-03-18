@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml;
-using MapCoreLib.Core.Interface;
-using MapCoreLib.Core.Util;
-using MapCoreLib.Util;
+using MapCoreLibMod.Core.Util;
+using MapCoreLibMod.Core.Interface;
+using MapCoreLibMod.Util;
 using RMGlib.Core.Utility;
 
-namespace MapCoreLib.Core.Asset
+namespace MapCoreLibMod.Core.Asset
 {
     public class ScriptAction: ScriptContent, ICustomXml
     {

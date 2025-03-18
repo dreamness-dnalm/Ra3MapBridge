@@ -1,4 +1,4 @@
-using MapCoreLib.Core.Asset;
+using MapCoreLibMod.Core.Asset;
 
 namespace Ra3MapBridge.model;
 

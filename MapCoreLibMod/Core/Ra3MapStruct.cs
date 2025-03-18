@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using MapCoreLib.Core.Asset;
-using MapCoreLib.Util;
+using MapCoreLibMod.Util;
+using MapCoreLibMod.Core.Asset;
 
-namespace MapCoreLib.Core
+namespace MapCoreLibMod.Core
 {
     /**
      * 应该把这结构传给每个MajorAsset

@@ -1,4 +1,4 @@
-﻿namespace MapCoreLib.Core.NewMap
+﻿namespace MapCoreLibMod.Core.NewMap
 {
     public class NewMapHandlerOption
     {

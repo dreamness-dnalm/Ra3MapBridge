@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 
-namespace MapCoreLib.Core
+namespace MapCoreLibMod.Core
 {
     public static class Ra3MapConst
     {

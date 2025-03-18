@@ -6,12 +6,12 @@ using System.Text;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
-using MapCoreLib.Core.Asset;
-using MapCoreLib.Core.Util;
-using MapCoreLib.Util;
+using MapCoreLibMod.Core.Asset;
+using MapCoreLibMod.Core.Util;
+using MapCoreLibMod.Util;
 using RMGlib.Core.Utility;
 
-namespace MapCoreLib.Core
+namespace MapCoreLibMod.Core
 {
     public class ScriptXml
     {

@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using MapCoreLib.Core.Asset;
+using MapCoreLibMod.Core.Asset;
 
-namespace MapCoreLib.Core
+namespace MapCoreLibMod.Core
 {
     public class MapDataContext
     {

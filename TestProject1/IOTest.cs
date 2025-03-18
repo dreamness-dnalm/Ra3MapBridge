@@ -1,5 +1,5 @@
-using MapCoreLib.Core;
-using MapCoreLib.Core.Util;
+using MapCoreLibMod.Core;
+using MapCoreLibMod.Core.Util;
 using Ra3MapBridge;
 using Ra3MapBridge.model;
 

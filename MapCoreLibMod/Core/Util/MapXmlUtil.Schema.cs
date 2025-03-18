@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Xml;
 using System.Xml.Schema;
-using MapCoreLib.Core.Asset;
+using MapCoreLibMod.Core.Asset;
 using RMGlib.Core.Utility;
 
-namespace MapCoreLib.Core.Util
+namespace MapCoreLibMod.Core.Util
 {
     public partial class MapXmlUtil
     {

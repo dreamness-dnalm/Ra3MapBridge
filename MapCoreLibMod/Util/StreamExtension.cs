@@ -1,9 +1,9 @@
 using System;
 using System.IO;
 using System.Text;
-using MapCoreLib.Core.Asset;
+using MapCoreLibMod.Core.Asset;
 
-namespace MapCoreLib.Util
+namespace MapCoreLibMod.Util
 {
     public static class StreamExtension
     {

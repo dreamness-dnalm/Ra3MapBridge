@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using Newtonsoft.Json;
 
-namespace MapCoreLib.Util
+namespace MapCoreLibMod.Util
 {
     public class Result
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using MapCoreLib.Core.Asset;
+using MapCoreLibMod.Core.Asset;
 
-namespace MapCoreLib.Core
+namespace MapCoreLibMod.Core
 {
     internal class Ra3MapVisitImpl2 : MapListener
     {

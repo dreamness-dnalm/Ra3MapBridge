@@ -1,4 +1,4 @@
-namespace MapCoreLib.Core.Asset
+namespace MapCoreLibMod.Core.Asset
 {
     public enum AssetPropertyType
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace MapCoreLib.Util
+namespace MapCoreLibMod.Util
 {
     public static class CollectionUtil
     {

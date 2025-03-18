@@ -4,10 +4,10 @@ using System.ComponentModel;
 using System.Reflection;
 using System.Xml;
 using System.Xml.Serialization;
-using MapCoreLib.Core.Asset;
-using MapCoreLib.Core.Interface;
+using MapCoreLibMod.Core.Asset;
+using MapCoreLibMod.Core.Interface;
 
-namespace MapCoreLib.Core.Util
+namespace MapCoreLibMod.Core.Util
 {
     public partial class MapXmlUtil
     {

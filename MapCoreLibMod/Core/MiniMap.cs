@@ -6,11 +6,11 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-using MapCoreLib.Core.Asset;
-using MapCoreLib.Core.Util;
-using MapCoreLib.Util;
+using MapCoreLibMod.Util;
+using MapCoreLibMod.Core.Asset;
+using MapCoreLibMod.Core.Util;
 
-namespace MapCoreLib.Core
+namespace MapCoreLibMod.Core
 {
     public class MiniMap
     {

@@ -6,9 +6,9 @@ using System.Linq;
 using System.Reflection;
 using System.Xml;
 using System.Xml.Serialization;
-using MapCoreLib.Core.Interface;
+using MapCoreLibMod.Core.Interface;
 
-namespace MapCoreLib.Core.Util
+namespace MapCoreLibMod.Core.Util
 {
     public static partial class MapXmlUtil
     {

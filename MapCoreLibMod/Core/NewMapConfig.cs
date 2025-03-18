@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using MapCoreLib.Core.NewMap;
+using MapCoreLibMod.Core.NewMap;
 
-namespace MapCoreLib.Core
+namespace MapCoreLibMod.Core
 {
     public class NewMapConfig
     {

@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Xml.Serialization;
-using MapCoreLib.Util;
+using MapCoreLibMod.Util;
 
-namespace MapCoreLib.Core.Asset
+namespace MapCoreLibMod.Core.Asset
 {
     public class ScriptGroup : MajorAsset
     {

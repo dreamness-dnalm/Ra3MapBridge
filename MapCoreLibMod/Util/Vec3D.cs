@@ -1,6 +1,6 @@
 using System;
 
-namespace MapCoreLib.Util
+namespace MapCoreLibMod.Util
 {
     public class Vec3D
     {

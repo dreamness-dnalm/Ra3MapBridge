@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using MapCoreLib.Core.Util;
+using MapCoreLibMod.Core.Util;
 
-namespace MapCoreLib.Core.Asset
+namespace MapCoreLibMod.Core.Asset
 {
     public class AssetList: MajorAsset
     {

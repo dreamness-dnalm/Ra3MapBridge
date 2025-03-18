@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml;
 
-namespace MapCoreLib.Core.Interface
+namespace MapCoreLibMod.Core.Interface
 {
     public interface ICustomXml
     {

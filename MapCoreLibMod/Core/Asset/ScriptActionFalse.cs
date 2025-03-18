@@ -1,4 +1,4 @@
-namespace MapCoreLib.Core.Asset
+namespace MapCoreLibMod.Core.Asset
 {
     public class ScriptActionFalse: ScriptAction
     {

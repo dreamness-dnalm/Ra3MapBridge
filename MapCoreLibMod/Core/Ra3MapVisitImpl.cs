@@ -1,6 +1,6 @@
-﻿using MapCoreLib.Core.Asset;
+﻿using MapCoreLibMod.Core.Asset;
 
-namespace MapCoreLib.Core
+namespace MapCoreLibMod.Core
 {
     public class Ra3MapVisitImpl
     {

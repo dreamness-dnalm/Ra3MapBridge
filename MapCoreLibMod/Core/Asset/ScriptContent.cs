@@ -4,11 +4,11 @@ using System.IO;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
-using MapCoreLib.Core.Util;
-using MapCoreLib.Util;
+using MapCoreLibMod.Core.Util;
+using MapCoreLibMod.Util;
 using RMGlib.Core.Utility;
 
-namespace MapCoreLib.Core.Asset
+namespace MapCoreLibMod.Core.Asset
 {
     public class ScriptContent : MajorAsset
     {

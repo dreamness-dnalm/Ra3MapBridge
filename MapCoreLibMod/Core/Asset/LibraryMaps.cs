@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using MapCoreLib.Util;
+using MapCoreLibMod.Util;
 
-namespace MapCoreLib.Core.Asset
+namespace MapCoreLibMod.Core.Asset
 {
     public class LibraryMaps: MajorAsset
     {

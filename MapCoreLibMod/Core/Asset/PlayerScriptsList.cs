@@ -3,10 +3,10 @@ using System.IO;
 using System.Linq;
 using System.Xml;
 using System.Xml.Serialization;
-using MapCoreLib.Core.Interface;
-using MapCoreLib.Core.Util;
+using MapCoreLibMod.Core.Interface;
+using MapCoreLibMod.Core.Util;
 
-namespace MapCoreLib.Core.Asset
+namespace MapCoreLibMod.Core.Asset
 {
     [XmlRoot(Ra3MapConst.ELEM_NAME_MapScript)]
     public class PlayerScriptsList : MajorAsset, ICustomXml

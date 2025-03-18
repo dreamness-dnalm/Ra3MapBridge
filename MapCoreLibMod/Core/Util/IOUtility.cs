@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace MapCoreLib.Core.Util
+namespace MapCoreLibMod.Core.Util
 {
     public class IOUtility
     {

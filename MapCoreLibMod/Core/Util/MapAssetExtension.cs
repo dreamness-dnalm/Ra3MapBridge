@@ -1,4 +1,4 @@
-﻿namespace MapCoreLib.Core.Util
+﻿namespace MapCoreLibMod.Core.Util
 {
     public static class MapAssetExtension
     {

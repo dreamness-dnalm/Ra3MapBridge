@@ -1,9 +1,9 @@
 using System;
 using System.IO;
 using System.Reflection;
-using MapCoreLib.Util;
+using MapCoreLibMod.Util;
 
-namespace MapCoreLib.Core.Asset
+namespace MapCoreLibMod.Core.Asset
 {
     public class AssetProperty
     {

@@ -1,7 +1,7 @@
-﻿using MapCoreLib.Core.Asset;
-using MapCoreLib.Core.Util;
+﻿using MapCoreLibMod.Core.Asset;
+using MapCoreLibMod.Core.Util;
 
-namespace MapCoreLib.Core.NewMap
+namespace MapCoreLibMod.Core.NewMap
 {
     public class RandomTerrainGen: NewMapOptionHandler
     {

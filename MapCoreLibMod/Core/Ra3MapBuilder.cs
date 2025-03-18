@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using MapCoreLib.Core.Asset;
-using MapCoreLib.Core.NewMap;
+using MapCoreLibMod.Core.Asset;
+using MapCoreLibMod.Core.NewMap;
 
-namespace MapCoreLib.Core
+namespace MapCoreLibMod.Core
 {
     public class Ra3MapBuilder
     {

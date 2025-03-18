@@ -1,12 +1,12 @@
 using System.IO;
 using System.Linq;
 using Compress;
-using MapCoreLib.Core.Asset;
-using MapCoreLib.Log;
-using MapCoreLib.Util;
+using MapCoreLibMod.Core.Asset;
+using MapCoreLibMod.Log;
+using MapCoreLibMod.Util;
 using Newtonsoft.Json;
 
-namespace MapCoreLib.Core
+namespace MapCoreLibMod.Core
 {
     public class Ra3Map
     {

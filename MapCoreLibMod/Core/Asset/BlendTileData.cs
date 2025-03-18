@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using MapCoreLib.Core.Util;
-using MapCoreLib.Util;
+using MapCoreLibMod.Util;
+using MapCoreLibMod.Core.Util;
 
-namespace MapCoreLib.Core.Asset
+namespace MapCoreLibMod.Core.Asset
 {
     public class BlendTileData : MajorAsset
     {

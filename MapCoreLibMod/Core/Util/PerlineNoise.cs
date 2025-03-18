@@ -3,9 +3,9 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using MapCoreLib.Util;
+using MapCoreLibMod.Util;
 
-namespace MapCoreLib.Core.Util
+namespace MapCoreLibMod.Core.Util
 {
     public class PerlineNoise
     {

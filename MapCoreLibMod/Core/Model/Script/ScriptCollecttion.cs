@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using MapCoreLib.Core;
-using MapCoreLib.Core.Asset;
-using MapCoreLib.Util;
+using MapCoreLibMod.Core;
+using MapCoreLibMod.Core.Asset;
+using MapCoreLibMod.Util;
 using Newtonsoft.Json;
 
 namespace RMGlib.Core.Utility

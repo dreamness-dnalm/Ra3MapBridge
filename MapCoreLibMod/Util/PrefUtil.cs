@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using MapCoreLib.Util;
+using MapCoreLibMod.Util;
 
-namespace MapCoreLib.Log
+namespace MapCoreLibMod.Log
 {
     internal static class PrefUtil
     {

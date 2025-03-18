@@ -1,7 +1,7 @@
 using System.Xml.Linq;
-using MapCoreLib.Core;
-using MapCoreLib.Core.Asset;
-using MapCoreLib.Util;
+using MapCoreLibMod.Core;
+using MapCoreLibMod.Core.Asset;
+using MapCoreLibMod.Util;
 using Ra3MapBridge.model;
 
 namespace Ra3MapBridge;

@@ -1,10 +1,10 @@
 using System;
 using System.IO;
 using Compress;
-using MapCoreLib.Core.Asset;
-using MapCoreLib.Log;
+using MapCoreLibMod.Core.Asset;
+using MapCoreLibMod.Log;
 
-namespace MapCoreLib.Core
+namespace MapCoreLibMod.Core
 {
     public class Ra3MapParseImpl
     {

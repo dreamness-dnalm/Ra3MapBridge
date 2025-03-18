@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MapCoreLib.Core.Asset
+namespace MapCoreLibMod.Core.Asset
 {
     [Flags]
     public enum BlendDirection : byte
