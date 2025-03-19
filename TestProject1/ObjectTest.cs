@@ -48,7 +48,7 @@ public class ObjectTest
         
         foreach (var uniqueID in uniqueIDList)
         {
-            map.RemoveObjectOrWaypoint(uniqueID);
+            map.RemoveObject(uniqueID);
         }
 
 

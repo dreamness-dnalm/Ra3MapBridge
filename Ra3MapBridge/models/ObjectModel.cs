@@ -1,16 +1,11 @@
 using MapCoreLibMod.Core.Asset;
+using Ra3MapBridge.enums;
 
 namespace Ra3MapBridge.model;
 
 public class ObjectModel
 {
-    enum StanceEnum
-    {
-        GUARD = 0,
-        AGGRESSIVE = 1,
-        HOLD_POSITION = 2,
-        HOLD_FIRE = 3
-    }
+
     
     public MapObject _mapObject;
     

@@ -23,15 +23,17 @@ public partial class Ra3MapWrap
         return new ObjectModel(objectsList.AddObject(ra3Map.getContext(), typeName, new Vec3D(x, y, z)));
     }
     
-    public bool RemoveObjectOrWaypoint(string uniqueID)
+    public bool RemoveObject(string uniqueID)
     {
         var objectsListMapObjects = objectsList.mapObjects;
 
         for (int i = 0; i < objectsListMapObjects.Count; i++)
         {
-            if(objectsListMapObjects[i].uniqueID == uniqueID)
+            var o = objectsListMapObjects[i];
+            if(o.typeName != "*Waypoints/Waypoint" && objectsListMapObjects[i].uniqueID == uniqueID)
             {
                 objectsListMapObjects.RemoveAt(i);
+                objectsList.uniqueIDSet.Remove(uniqueID);
                 return true;
             }
         }
@@ -57,9 +59,9 @@ public partial class Ra3MapWrap
         return new WaypointModel(objectsList.AddWaypoint(ra3Map.getContext(), waypointName, new Vec3D(x, y, z)));
     }
 
-    public WaypointModel AddPlayerStartWaypoint(MapDataContext context, int playerIndex, float x, float y, float z = 0)
+    public WaypointModel AddPlayerStartWaypoint(int playerIndex, float x, float y, float z = 0)
     {
-        return new WaypointModel(objectsList.AddPlayerStartWaypoint(context, playerIndex, new Vec3D(x, y, z)));
+        return new WaypointModel(objectsList.AddPlayerStartWaypoint(ra3Map.getContext(), playerIndex, new Vec3D(x, y, z)));
     }
 
     public bool RemoveWaypoint(string waypointName)
@@ -71,6 +73,8 @@ public partial class Ra3MapWrap
             if(objectsListMapObjects[i].uniqueID == waypointName)
             {
                 objectsListMapObjects.RemoveAt(i);
+                objectsList.uniqueIDSet.Remove(waypointName);
+                objectsList.waypointNameSet.Remove(waypointName);
                 return true;
             }
         }
