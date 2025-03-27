@@ -19,7 +19,7 @@ public partial class Ra3MapWrap
         LoadBlendTileData();
         LoadObjectsList();
         LoadWorldInfo();
-        LoadPlayers();
+        // LoadPlayers();
         LoadTeams();
         
     }

@@ -59,11 +59,25 @@ public class ObjectTest
     [Test]
     public void Debug()
     {
-        var map = Ra3MapWrap.Open(PathUtil.RA3MapFolder, "test_4");
+        var map = Ra3MapWrap.Open(PathUtil.RA3MapFolder, "in_map_02");
 
-        foreach (var o in map.GetObjects())
-        {
-            Console.WriteLine(o);   
-        }
+        // foreach (var o in map.GetObjects())
+        // {
+        //     Console.WriteLine(o);   
+        // }
+        //
+        // for (int x = 0; x < map.MapWidth; x++)
+        // {
+        //     for (int y = 0; y < map.MapHeight; y++)
+        //     {
+        //         if (map.GetTerrainHeight(x, y) < 210)
+        //         {
+        //             map.SetTerrainHeight(x, y, 210);
+        //         }
+        //     }
+        // }
+        
+        map.SaveAs(PathUtil.RA3MapFolder, "out_map_01");
+        
     }
 }

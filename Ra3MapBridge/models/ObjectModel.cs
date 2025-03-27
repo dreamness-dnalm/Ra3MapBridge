@@ -52,90 +52,157 @@ public class ObjectModel
         set => _mapObject.assetPropertyCollection.getProperty("originalOwner").data = value;
     }
 
-    public string object_name
-    {
-        get => _mapObject.assetPropertyCollection.getProperty("objectName").data.ToString();
-        set => _mapObject.assetPropertyCollection.getProperty("objectName").data = value;
-    }
-    
-    public int initial_health
-    {
-        get => (int)_mapObject.assetPropertyCollection.getProperty("objectInitialHealth").data;
-        set => _mapObject.assetPropertyCollection.getProperty("objectInitialHealth").data = value;
-    }
-    
-    public bool enabled
-    {
-        get => (bool)_mapObject.assetPropertyCollection.getProperty("objectEnabled").data;
-        set => _mapObject.assetPropertyCollection.getProperty("objectEnabled").data = value;
-    }
-
-    public bool indestructible
-    {
-        get => (bool)_mapObject.assetPropertyCollection.getProperty("objectIndestructible").data;
-        set => _mapObject.assetPropertyCollection.getProperty("objectIndestructible").data = value;
-    }
-    
-    public bool unsellable
-    {
-        get => (bool)_mapObject.assetPropertyCollection.getProperty("objectUnsellable").data;
-        set => _mapObject.assetPropertyCollection.getProperty("objectUnsellable").data = value;
-    }
-    
-    public bool powered
-    {
-        get => (bool)_mapObject.assetPropertyCollection.getProperty("objectPowered").data;
-        set => _mapObject.assetPropertyCollection.getProperty("objectPowered").data = value;
-    }
-    
-    public bool recruitable_ai
-    {
-        get => (bool)_mapObject.assetPropertyCollection.getProperty("objectRecruitableAI").data;
-        set => _mapObject.assetPropertyCollection.getProperty("objectRecruitableAI").data = value;
-    }
-    
-    public bool targetable
-    {
-        get => (bool)_mapObject.assetPropertyCollection.getProperty("objectTargetable").data;
-        set => _mapObject.assetPropertyCollection.getProperty("objectTargetable").data = value;
-    }
-    
-    public bool sleeping
-    {
-        get => (bool)_mapObject.assetPropertyCollection.getProperty("objectSleeping").data;
-        set => _mapObject.assetPropertyCollection.getProperty("objectSleeping").data = value;
-    }
-    
-    public int base_priority
-    {
-        get => (int)_mapObject.assetPropertyCollection.getProperty("objectBasePriority").data;
-        set => _mapObject.assetPropertyCollection.getProperty("objectBasePriority").data = value;
-    }
-    
-    public int base_phase
-    {
-        get => (int)_mapObject.assetPropertyCollection.getProperty("objectBasePhase").data;
-        set => _mapObject.assetPropertyCollection.getProperty("objectBasePhase").data = value;
-    }
-    
-    public string layer
-    {
-        get => _mapObject.assetPropertyCollection.getProperty("objectLayer").data.ToString();
-        set => _mapObject.assetPropertyCollection.getProperty("objectLayer").data = value;
-    }
-    
-    public string stance
+    public string? object_name
     {
         get
         {
-            return ((StanceEnum)((int)_mapObject.assetPropertyCollection.getProperty("objectInitialStance").data)).ToString();
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectName");
+            if (assetProperty == null)
+            {
+                return null;
+            }
+            else
+            {
+                return assetProperty.data.ToString();
+            }
         }
-        set => _mapObject.assetPropertyCollection.getProperty("objectInitialStance").data = (int)Enum.Parse<StanceEnum>(value);
+        set => _mapObject.assetPropertyCollection.getProperty("objectName").data = value;
+    }
+
+    public int? initial_health
+    {
+        get
+        {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectInitialHealth");
+            if(assetProperty == null){
+                return null;
+            }else{
+                return (int)assetProperty.data;
+            }
+        }
+        set => _mapObject.assetPropertyCollection.getProperty("objectInitialHealth").data = value;
+    }
+
+    public bool? enabled
+    {
+        get
+        {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectEnabled");
+            return assetProperty == null ? null : (bool)assetProperty.data;
+        }
+        set => _mapObject.assetPropertyCollection.getProperty("objectEnabled").data = value;
+    }
+
+    public bool? indestructible
+    {
+        get
+        {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectIndestructible");
+            return assetProperty == null ? null : (bool)assetProperty.data;
+        }
+        set => _mapObject.assetPropertyCollection.getProperty("objectIndestructible").data = value;
     }
     
-    public int experience_level
+    public bool? unsellable
     {
-        get => (int)_mapObject.assetPropertyCollection.getProperty("objectExperienceLevel").data;
+        get
+        {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectUnsellable");
+            return assetProperty == null ? null : (bool)assetProperty.data;
+        }
+        set => _mapObject.assetPropertyCollection.getProperty("objectUnsellable").data = value;
+    }
+    
+    public bool? powered
+    {
+        get
+        {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectPowered");
+            return assetProperty == null ? null : (bool)assetProperty.data;
+        }
+        set => _mapObject.assetPropertyCollection.getProperty("objectPowered").data = value;
+    }
+    
+    public bool? recruitable_ai
+    {
+        get
+        {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectRecruitableAI");
+            return assetProperty == null ? null : (bool)assetProperty.data;
+        }
+        set => _mapObject.assetPropertyCollection.getProperty("objectRecruitableAI").data = value;
+    }
+    
+    public bool? targetable
+    {
+        get
+        {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectTargetable");
+            return assetProperty == null ? null : (bool)assetProperty.data;
+        }
+        set => _mapObject.assetPropertyCollection.getProperty("objectTargetable").data = value;
+    }
+    
+    public bool? sleeping
+    {
+        get
+        {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectSleeping");
+            return assetProperty == null ? null : (bool)assetProperty.data;
+        }
+        set => _mapObject.assetPropertyCollection.getProperty("objectSleeping").data = value;
+    }
+    
+    public int? base_priority
+    {
+        get
+        {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectBasePriority");
+            return assetProperty == null ? null : (int)assetProperty.data;
+        }
+        set => _mapObject.assetPropertyCollection.getProperty("objectBasePriority").data = value;
+    }
+    
+    public int? base_phase
+    {
+        get
+        {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectBasePhase");
+            return assetProperty == null ? null : (int)assetProperty.data;
+        }
+        set => _mapObject.assetPropertyCollection.getProperty("objectBasePhase").data = value;
+    }
+    
+    public string? layer
+    {
+        get
+        {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectLayer");
+            return assetProperty == null ? null : assetProperty.data.ToString();
+        }
+        set => _mapObject.assetPropertyCollection.getProperty("objectLayer").data = value;
+    }
+    
+    public string? stance
+    {
+        get
+        {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectInitialStance");
+            return assetProperty == null ? null : ((StanceEnum)((int)assetProperty.data)).ToString();
+        }
+        set => _mapObject.assetPropertyCollection.getProperty("objectInitialStance").data = value == null ? null : (int)Enum.Parse<StanceEnum>(value);
+    }
+    
+    public int? experience_level
+    {
+        get {
+            var assetProperty = _mapObject.assetPropertyCollection.getProperty("objectExperienceLevel");
+            if(assetProperty == null){
+                return null;
+            }else{
+                return (int)assetProperty.data;
+            }
+        }
         set
         {
             if (value < 1 || value > 4)

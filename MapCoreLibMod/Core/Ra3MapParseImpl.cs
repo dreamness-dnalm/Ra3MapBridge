@@ -60,9 +60,9 @@ namespace MapCoreLibMod.Core
                     case Ra3MapConst.ASSET_AssetList:
                         mapStruct.addAsset(new AssetList().fromStream(br, dataContext));
                         break;
-                    case Ra3MapConst.ASSET_SidesList:
-                        mapStruct.addAsset(new SidesList().fromStream(br, dataContext));
-                        break;
+                    // case Ra3MapConst.ASSET_SidesList:
+                    //     mapStruct.addAsset(new SidesList().fromStream(br, dataContext));
+                    //     break;
                     case Ra3MapConst.ASSET_PlayerScriptsList:
                         mapStruct.addAsset(new PlayerScriptsList().fromStream(br, dataContext));
                         break;
