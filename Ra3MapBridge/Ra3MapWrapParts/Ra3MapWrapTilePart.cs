@@ -20,12 +20,15 @@ public partial class Ra3MapWrap
         }
         _blendTileData.tiles[x, y] = _blendTileData.GetTile(x, y, textureIndexDict[texture]);
     }
+
+    public static void RegisterTexture(string name, string textureFileName, string bumpTextureFileName)
+    {
+        WorldInfo.RegisterTexture(name, textureFileName, bumpTextureFileName);
+    }
     
     public string GetTileTexture(int x, int y)
     {
         int tmp = y % 8 / 2 * 16 + y % 2 * 2 + x % 8 / 2 * 4 + x % 2;
-        
-        
         
         var index = _blendTileData.tiles[x, y];
         

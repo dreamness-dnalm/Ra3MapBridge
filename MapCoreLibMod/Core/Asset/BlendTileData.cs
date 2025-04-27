@@ -334,6 +334,8 @@ namespace MapCoreLibMod.Core.Asset
             current += 64 * texture;
             return (ushort)current;
         }
+        
+        
 
         public void addTexture(MapDataContext context, string textureName)
         {

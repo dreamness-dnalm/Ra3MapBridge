@@ -16,7 +16,7 @@ public class CoreTest
     [Test]
     public static void t02()
     {
-        var m = Ra3MapBridge.Ra3MapWrap.Open(PathUtil.RA3MapFolder, "in_map_02");
+        var m = Ra3MapBridge.Ra3MapWrap.Open(PathUtil.RA3MapFolder, "NewMap01");
 
         foreach (var o in m.GetObjects())
         {
