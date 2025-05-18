@@ -118,5 +118,15 @@ namespace MapCoreLibMod.Core.Asset
 
             return assetProperty;
         }
+
+        public override string ToString()
+        {
+            string ret = "[" +
+                         "propertyType=" + propertyType +
+                         ", id=" + id +
+                         ", name='" + name + '\'' +
+                         ", data=" + data + "]";
+            return ret;
+        }
     }
 }

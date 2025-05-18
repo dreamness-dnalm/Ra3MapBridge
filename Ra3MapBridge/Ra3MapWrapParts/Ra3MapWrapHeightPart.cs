@@ -61,6 +61,31 @@ public partial class Ra3MapWrap
     {
         return HeightData[x, y];
     }
+    
+    // -------- border --------------
+    public List<HeightMapBorder> GetBorders()
+    {
+        return Borders;
+    }
+    
+    public void SetBorder(HeightMapBorder border, int x1, int y1, int x2, int y2)
+    {
+        border.Corner1X = x1;
+        border.Corner1Y = y1;
+        border.Corner2X = x2;
+        border.Corner2Y = y2;
+    }
+    
+    public void AddBorder(int x1, int y1, int x2, int y2)
+    {
+        var b = HeightMapBorder.newInstance(x1, y1, x2, y2);
+        Borders.Add(b);
+    }
+
+    public void RemoveBorder(HeightMapBorder border)
+    {
+        Borders.Remove(border);
+    }
 
     // ---- init ----
     

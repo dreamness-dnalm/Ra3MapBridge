@@ -19,6 +19,7 @@ namespace MapCoreLibMod.Core.Asset
                 teamList.Add(team);
                 teamFullNameSet.Add(teamFullName);
             }
+            Console.Write("");
         }
 
         protected override void saveData(BinaryWriter binaryWriter, MapDataContext context)

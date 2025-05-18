@@ -36,5 +36,10 @@ namespace MapCoreLibMod.Core.Asset
             heightMapBorder.Corner2Y = Corner2Y;
             return heightMapBorder;
         }
+
+        public override string ToString()
+        {
+            return "{border, (" + Corner1X + "," + Corner1Y + "),(" + Corner2X + "," + Corner2Y + ")}";
+        }
     }
 }

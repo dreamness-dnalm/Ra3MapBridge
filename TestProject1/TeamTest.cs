@@ -9,11 +9,15 @@ public class TeamTest
     [Test]
     public void Debug()
     {
-        var map = Ra3MapWrap.Open(PathUtil.RA3MapFolder, "test_4");
+        var map = Ra3MapWrap.Open(PathUtil.RA3MapFolder, "test15");
 
         foreach (TeamModel t in map.GetTeams())
         {
-            Console.WriteLine(t);   
+            if (t.team_full_name == "Player_1/t1" || t.team_full_name == "Player_1/t2" || t.team_full_name == "Player_1/t3")
+            {
+                Console.WriteLine("");
+            }
+            Console.WriteLine(t);
         }
     }
     

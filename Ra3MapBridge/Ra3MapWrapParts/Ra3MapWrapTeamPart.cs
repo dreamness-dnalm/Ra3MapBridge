@@ -11,13 +11,13 @@ public partial class Ra3MapWrap
     
     public List<TeamModel> GetTeams()
     {
-        return _teams.teamList.Select(t => new TeamModel(t)).ToList();
+        return _teams.teamList.Select(t => new TeamModel(t, ra3Map.getContext())).ToList();
     }
     
     public TeamModel AddTeam(string teamName, string belongToPlayerName)
     {
         var team = _teams.addTeam(ra3Map.getContext(), teamName, belongToPlayerName);
-        return new TeamModel(team);
+        return new TeamModel(team, ra3Map.getContext());
     }
     
     public bool RemoveTeam(string teamName, string belongToPlayerName)
